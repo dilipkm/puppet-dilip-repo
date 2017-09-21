@@ -1,7 +1,7 @@
 # Configure git repo to r10k
-
 # Specify a puppet forge as the default source
 forge "https://forgeapi.puppetlabs.com"
+moduledir 'modules'
 
 # Install puppetlabs from the default source
 mod 'puppetlabs/stdlib'
@@ -13,4 +13,3 @@ mod 'puppetlabs/concat'
 #  :git => "/var/lib/git/fullstackpuppet-ntp.git"
 mod 'general', :local => true
 mod 'randd', :local => true
-EOF

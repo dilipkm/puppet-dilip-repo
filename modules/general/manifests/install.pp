@@ -7,7 +7,7 @@
 # ----------
 
 class general::install {
-  package { 'ntpd':
+  package { 'ntp':
     ensure => installed,
   }
   package { 'strace':
@@ -28,7 +28,7 @@ class general::install {
   package { 'screen':
     ensure => installed,
   }
-  package { 'pstree':
+  package { 'psmisc':
     ensure => installed,
   }
   package { 'telnet':
